@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+code,
+.font-mono {
+  font-family: "Fira Code", monospace;
+}
+
+.spiral-ring {
+  border: 1.5px dashed rgba(74, 222, 128, 0.15);
+  border-radius: 50%;
+  position: absolute;
+  animation: spin 18s linear infinite;
+}
+.spiral-ring-2 {
+  border: 1px dashed rgba(74, 222, 128, 0.08);
+  border-radius: 50%;
+  position: absolute;
+  animation: spin 28s linear infinite reverse;
+}
+.image-outline {
+  box-shadow:
+    0 0 0 2px #4ade80,
+    0 0 20px rgba(74, 222, 128, 0.2),
+    0 0 60px rgba(74, 222, 128, 0.05);
+}
