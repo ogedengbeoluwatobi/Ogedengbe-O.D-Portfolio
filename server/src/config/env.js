@@ -7,7 +7,7 @@ export const env = {
     .split(",")
     .map((u) => u.trim().replace(/\/$/, ""))
     .filter(Boolean),
-  smtpUser: process.env.SMTP_USER,
-  smtpPass: process.env.SMTP_PASS,
-  contactTo: process.env.CONTACT_TO || process.env.SMTP_USER,
+  resendApiKey: process.env.RESEND_API_KEY,
+  mailFrom: process.env.MAIL_FROM || "Portfolio Contact <onboarding@resend.dev>",
+  contactTo: process.env.CONTACT_TO,
 };
